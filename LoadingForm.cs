@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace UniManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class LoadingForm : Form
     {
-        public Form1()
+        public LoadingForm()
         {
             InitializeComponent();
+        }
+
+        private void timer_Loading_Tick(object sender, EventArgs e)
+        {
+            pnlLoadingBar.Width += 5;
+
+            if (pnlLoadingBar.Width >= 800)
+            {
+                timer_Loading.Stop();
+            }
         }
     }
 }
