@@ -141,6 +141,7 @@
             this.btnLogin_Login.TabIndex = 5;
             this.btnLogin_Login.Text = "Login";
             this.btnLogin_Login.UseVisualStyleBackColor = false;
+            this.btnLogin_Login.Click += new System.EventHandler(this.btnLogin_Login_Click);
             // 
             // cbShowPassword_Login
             // 
@@ -158,6 +159,7 @@
             this.tbPassword_Login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPassword_Login.Location = new System.Drawing.Point(39, 171);
             this.tbPassword_Login.Name = "tbPassword_Login";
+            this.tbPassword_Login.PasswordChar = '*';
             this.tbPassword_Login.Size = new System.Drawing.Size(231, 22);
             this.tbPassword_Login.TabIndex = 3;
             // 
