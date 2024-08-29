@@ -39,7 +39,7 @@
             this.cbShowPassword_Login = new System.Windows.Forms.CheckBox();
             this.tbPassword_Login = new System.Windows.Forms.TextBox();
             this.lblPassword_Login = new System.Windows.Forms.Label();
-            this.tbUsernameLogin = new System.Windows.Forms.TextBox();
+            this.tbUsername_Login = new System.Windows.Forms.TextBox();
             this.lblUsername_Login = new System.Windows.Forms.Label();
             this.pnlHeader_Login.SuspendLayout();
             this.pnlSignin_Login.SuspendLayout();
@@ -87,7 +87,7 @@
             this.pnlSignin_Login.Controls.Add(this.cbShowPassword_Login);
             this.pnlSignin_Login.Controls.Add(this.tbPassword_Login);
             this.pnlSignin_Login.Controls.Add(this.lblPassword_Login);
-            this.pnlSignin_Login.Controls.Add(this.tbUsernameLogin);
+            this.pnlSignin_Login.Controls.Add(this.tbUsername_Login);
             this.pnlSignin_Login.Controls.Add(this.lblUsername_Login);
             this.pnlSignin_Login.Location = new System.Drawing.Point(234, 67);
             this.pnlSignin_Login.Name = "pnlSignin_Login";
@@ -171,13 +171,13 @@
             this.lblPassword_Login.TabIndex = 2;
             this.lblPassword_Login.Text = "Password:";
             // 
-            // tbUsernameLogin
+            // tbUsername_Login
             // 
-            this.tbUsernameLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbUsernameLogin.Location = new System.Drawing.Point(39, 105);
-            this.tbUsernameLogin.Name = "tbUsernameLogin";
-            this.tbUsernameLogin.Size = new System.Drawing.Size(231, 22);
-            this.tbUsernameLogin.TabIndex = 1;
+            this.tbUsername_Login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbUsername_Login.Location = new System.Drawing.Point(39, 105);
+            this.tbUsername_Login.Name = "tbUsername_Login";
+            this.tbUsername_Login.Size = new System.Drawing.Size(231, 22);
+            this.tbUsername_Login.TabIndex = 1;
             // 
             // lblUsername_Login
             // 
@@ -216,7 +216,7 @@
         private System.Windows.Forms.Label lblUMS_Login;
         private System.Windows.Forms.Panel pnlSignin_Login;
         private System.Windows.Forms.Label lblUsername_Login;
-        private System.Windows.Forms.TextBox tbUsernameLogin;
+        private System.Windows.Forms.TextBox tbUsername_Login;
         private System.Windows.Forms.TextBox tbPassword_Login;
         private System.Windows.Forms.Label lblPassword_Login;
         private System.Windows.Forms.CheckBox cbShowPassword_Login;
