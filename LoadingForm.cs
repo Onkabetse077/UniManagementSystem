@@ -24,7 +24,12 @@ namespace UniManagementSystem
             if (pnlLoadingBar.Width >= 800)
             {
                 timer_Loading.Stop();
+
+                LoginForm login = new LoginForm();
+                login.Show();
+                this.Hide();
             }
         }
+
     }
 }

@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.lblUMS_Loading = new System.Windows.Forms.Label();
-            this.pbLogo_Loading = new System.Windows.Forms.PictureBox();
             this.pnlLoading = new System.Windows.Forms.Panel();
             this.pnlLoadingBar = new System.Windows.Forms.Panel();
             this.timer_Loading = new System.Windows.Forms.Timer(this.components);
+            this.pbLogo_Loading = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo_Loading)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,15 +46,6 @@
             this.lblUMS_Loading.Size = new System.Drawing.Size(181, 31);
             this.lblUMS_Loading.TabIndex = 0;
             this.lblUMS_Loading.Text = "Uni Manager";
-            // 
-            // pbLogo_Loading
-            // 
-            this.pbLogo_Loading.Image = global::UniManagementSystem.Properties.Resources.Loading_Logo;
-            this.pbLogo_Loading.Location = new System.Drawing.Point(349, 248);
-            this.pbLogo_Loading.Name = "pbLogo_Loading";
-            this.pbLogo_Loading.Size = new System.Drawing.Size(100, 100);
-            this.pbLogo_Loading.TabIndex = 1;
-            this.pbLogo_Loading.TabStop = false;
             // 
             // pnlLoading
             // 
@@ -78,6 +69,15 @@
             this.timer_Loading.Interval = 20;
             this.timer_Loading.Tick += new System.EventHandler(this.timer_Loading_Tick);
             // 
+            // pbLogo_Loading
+            // 
+            this.pbLogo_Loading.Image = global::UniManagementSystem.Properties.Resources.Loading_Logo;
+            this.pbLogo_Loading.Location = new System.Drawing.Point(349, 248);
+            this.pbLogo_Loading.Name = "pbLogo_Loading";
+            this.pbLogo_Loading.Size = new System.Drawing.Size(100, 100);
+            this.pbLogo_Loading.TabIndex = 1;
+            this.pbLogo_Loading.TabStop = false;
+            // 
             // LoadingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -90,6 +90,7 @@
             this.Controls.Add(this.lblUMS_Loading);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoadingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoadingForm";
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo_Loading)).EndInit();
             this.ResumeLayout(false);
