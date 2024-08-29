@@ -35,7 +35,15 @@ namespace UniManagementSystem
         }
 
         public static string Username;
+
         private void lblRegisterLink_Login_Click(object sender, EventArgs e)
+        {
+            SignupForm signupForm = new SignupForm();
+            signupForm.Show();
+            this.Hide();
+        }
+
+        private void btnLogin_Login_Click(object sender, EventArgs e)
         {
             using (SqlConnection connect = new SqlConnection(connection))
             {
@@ -59,7 +67,7 @@ namespace UniManagementSystem
                         MessageBox.Show("Login Successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         //MainPage mainPage = new MainPage();
                         //mainPage.Show();
-                       // this.Hide();
+                        // this.Hide();
                     }
                     else
                     {
@@ -71,7 +79,8 @@ namespace UniManagementSystem
             {
                 MessageBox.Show("Please fill in all the details!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        
+         }
     }
 
 }
