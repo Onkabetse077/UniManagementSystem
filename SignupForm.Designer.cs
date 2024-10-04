@@ -32,6 +32,8 @@
             this.lblUMS_Signup = new System.Windows.Forms.Label();
             this.lblX_Signup = new System.Windows.Forms.Label();
             this.pnlSignup_Signup = new System.Windows.Forms.Panel();
+            this.tbConfirmPassword_Signup = new System.Windows.Forms.TextBox();
+            this.lblConfirmPassword_Signup = new System.Windows.Forms.Label();
             this.lblLoginLink_Signup = new System.Windows.Forms.Label();
             this.lblLogin_Signup = new System.Windows.Forms.Label();
             this.lblRegister_Signup = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.lblPassword_Signup = new System.Windows.Forms.Label();
             this.tbUsername_Signup = new System.Windows.Forms.TextBox();
             this.lblUsername_Signup = new System.Windows.Forms.Label();
-            this.tbConfirmPassword_Signup = new System.Windows.Forms.TextBox();
-            this.lblConfirmPassword_Signup = new System.Windows.Forms.Label();
             this.pnlHeader_Signup.SuspendLayout();
             this.pnlSignup_Signup.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,7 @@
             this.lblX_Signup.Size = new System.Drawing.Size(23, 20);
             this.lblX_Signup.TabIndex = 1;
             this.lblX_Signup.Text = "X";
+            this.lblX_Signup.Click += new System.EventHandler(this.lblX_Signup_Click);
             // 
             // pnlSignup_Signup
             // 
@@ -96,6 +97,25 @@
             this.pnlSignup_Signup.Name = "pnlSignup_Signup";
             this.pnlSignup_Signup.Size = new System.Drawing.Size(300, 396);
             this.pnlSignup_Signup.TabIndex = 3;
+            // 
+            // tbConfirmPassword_Signup
+            // 
+            this.tbConfirmPassword_Signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbConfirmPassword_Signup.Location = new System.Drawing.Point(39, 224);
+            this.tbConfirmPassword_Signup.Name = "tbConfirmPassword_Signup";
+            this.tbConfirmPassword_Signup.PasswordChar = '*';
+            this.tbConfirmPassword_Signup.Size = new System.Drawing.Size(231, 22);
+            this.tbConfirmPassword_Signup.TabIndex = 10;
+            // 
+            // lblConfirmPassword_Signup
+            // 
+            this.lblConfirmPassword_Signup.AutoSize = true;
+            this.lblConfirmPassword_Signup.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmPassword_Signup.Location = new System.Drawing.Point(34, 196);
+            this.lblConfirmPassword_Signup.Name = "lblConfirmPassword_Signup";
+            this.lblConfirmPassword_Signup.Size = new System.Drawing.Size(163, 25);
+            this.lblConfirmPassword_Signup.TabIndex = 9;
+            this.lblConfirmPassword_Signup.Text = "Confirm Password:";
             // 
             // lblLoginLink_Signup
             // 
@@ -144,6 +164,7 @@
             this.btnRegister_Signup.TabIndex = 5;
             this.btnRegister_Signup.Text = "Register";
             this.btnRegister_Signup.UseVisualStyleBackColor = false;
+            this.btnRegister_Signup.Click += new System.EventHandler(this.btnRegister_Signup_Click);
             // 
             // cbShowPassword_Signup
             // 
@@ -192,25 +213,6 @@
             this.lblUsername_Signup.Size = new System.Drawing.Size(99, 25);
             this.lblUsername_Signup.TabIndex = 0;
             this.lblUsername_Signup.Text = "Username:";
-            // 
-            // tbConfirmPassword_Signup
-            // 
-            this.tbConfirmPassword_Signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbConfirmPassword_Signup.Location = new System.Drawing.Point(39, 224);
-            this.tbConfirmPassword_Signup.Name = "tbConfirmPassword_Signup";
-            this.tbConfirmPassword_Signup.PasswordChar = '*';
-            this.tbConfirmPassword_Signup.Size = new System.Drawing.Size(231, 22);
-            this.tbConfirmPassword_Signup.TabIndex = 10;
-            // 
-            // lblConfirmPassword_Signup
-            // 
-            this.lblConfirmPassword_Signup.AutoSize = true;
-            this.lblConfirmPassword_Signup.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmPassword_Signup.Location = new System.Drawing.Point(34, 196);
-            this.lblConfirmPassword_Signup.Name = "lblConfirmPassword_Signup";
-            this.lblConfirmPassword_Signup.Size = new System.Drawing.Size(163, 25);
-            this.lblConfirmPassword_Signup.TabIndex = 9;
-            this.lblConfirmPassword_Signup.Text = "Confirm Password:";
             // 
             // SignupForm
             // 

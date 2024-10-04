@@ -31,8 +31,10 @@
             this.pnlHeader_Main = new System.Windows.Forms.Panel();
             this.lblX_Main = new System.Windows.Forms.Label();
             this.pnlSideMain_Main = new System.Windows.Forms.Panel();
+            this.lblWelcome_Main = new System.Windows.Forms.Label();
             this.pbLogo_Main = new System.Windows.Forms.PictureBox();
-            this.lblUniManagementSystem_Main = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlHeader_Main.SuspendLayout();
             this.pnlSideMain_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo_Main)).BeginInit();
@@ -57,11 +59,14 @@
             this.lblX_Main.Size = new System.Drawing.Size(26, 23);
             this.lblX_Main.TabIndex = 0;
             this.lblX_Main.Text = "X";
+            this.lblX_Main.Click += new System.EventHandler(this.lblX_Main_Click);
             // 
             // pnlSideMain_Main
             // 
             this.pnlSideMain_Main.BackColor = System.Drawing.Color.Lime;
-            this.pnlSideMain_Main.Controls.Add(this.lblUniManagementSystem_Main);
+            this.pnlSideMain_Main.Controls.Add(this.button1);
+            this.pnlSideMain_Main.Controls.Add(this.label1);
+            this.pnlSideMain_Main.Controls.Add(this.lblWelcome_Main);
             this.pnlSideMain_Main.Controls.Add(this.pbLogo_Main);
             this.pnlSideMain_Main.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSideMain_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -69,6 +74,16 @@
             this.pnlSideMain_Main.Name = "pnlSideMain_Main";
             this.pnlSideMain_Main.Size = new System.Drawing.Size(334, 653);
             this.pnlSideMain_Main.TabIndex = 1;
+            // 
+            // lblWelcome_Main
+            // 
+            this.lblWelcome_Main.AutoSize = true;
+            this.lblWelcome_Main.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome_Main.Location = new System.Drawing.Point(62, 186);
+            this.lblWelcome_Main.Name = "lblWelcome_Main";
+            this.lblWelcome_Main.Size = new System.Drawing.Size(107, 29);
+            this.lblWelcome_Main.TabIndex = 2;
+            this.lblWelcome_Main.Text = "Welcome,";
             // 
             // pbLogo_Main
             // 
@@ -79,15 +94,28 @@
             this.pbLogo_Main.TabIndex = 2;
             this.pbLogo_Main.TabStop = false;
             // 
-            // lblUniManagementSystem_Main
+            // label1
             // 
-            this.lblUniManagementSystem_Main.AutoSize = true;
-            this.lblUniManagementSystem_Main.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUniManagementSystem_Main.Location = new System.Drawing.Point(42, 186);
-            this.lblUniManagementSystem_Main.Name = "lblUniManagementSystem_Main";
-            this.lblUniManagementSystem_Main.Size = new System.Drawing.Size(251, 29);
-            this.lblUniManagementSystem_Main.TabIndex = 2;
-            this.lblUniManagementSystem_Main.Text = "Uni Management System";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(175, 186);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 29);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Admin";
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(0, 281);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(331, 46);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -115,6 +143,8 @@
         private System.Windows.Forms.Label lblX_Main;
         private System.Windows.Forms.Panel pnlSideMain_Main;
         private System.Windows.Forms.PictureBox pbLogo_Main;
-        private System.Windows.Forms.Label lblUniManagementSystem_Main;
+        private System.Windows.Forms.Label lblWelcome_Main;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

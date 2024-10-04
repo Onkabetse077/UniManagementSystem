@@ -16,5 +16,14 @@ namespace UniManagementSystem
         {
             InitializeComponent();
         }
+
+        private void lblX_Main_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are sure you want to Exit?", "Confirmation Message", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
