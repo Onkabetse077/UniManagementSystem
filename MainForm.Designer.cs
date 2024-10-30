@@ -48,6 +48,7 @@
             // pnlHeader_Main
             // 
             this.pnlHeader_Main.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pnlHeader_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlHeader_Main.Controls.Add(this.lblUMS_Main);
             this.pnlHeader_Main.Controls.Add(this.lblX_Main);
             this.pnlHeader_Main.Dock = System.Windows.Forms.DockStyle.Top;
@@ -80,6 +81,7 @@
             // pnlSideMain_Main
             // 
             this.pnlSideMain_Main.BackColor = System.Drawing.Color.Lime;
+            this.pnlSideMain_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlSideMain_Main.Controls.Add(this.btnLogout_Main);
             this.pnlSideMain_Main.Controls.Add(this.btnAddStudent_Main);
             this.pnlSideMain_Main.Controls.Add(this.btnAddTeacher_Main);
@@ -189,10 +191,11 @@
             // 
             // pnlUserControls_Main
             // 
+            this.pnlUserControls_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlUserControls_Main.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlUserControls_Main.Location = new System.Drawing.Point(345, 47);
+            this.pnlUserControls_Main.Location = new System.Drawing.Point(338, 47);
             this.pnlUserControls_Main.Name = "pnlUserControls_Main";
-            this.pnlUserControls_Main.Size = new System.Drawing.Size(855, 653);
+            this.pnlUserControls_Main.Size = new System.Drawing.Size(862, 653);
             this.pnlUserControls_Main.TabIndex = 2;
             // 
             // MainForm
