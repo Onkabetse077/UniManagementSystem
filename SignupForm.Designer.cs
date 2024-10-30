@@ -120,6 +120,7 @@
             // lblLoginLink_Signup
             // 
             this.lblLoginLink_Signup.AutoSize = true;
+            this.lblLoginLink_Signup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLoginLink_Signup.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoginLink_Signup.ForeColor = System.Drawing.Color.DarkGreen;
             this.lblLoginLink_Signup.Location = new System.Drawing.Point(214, 349);

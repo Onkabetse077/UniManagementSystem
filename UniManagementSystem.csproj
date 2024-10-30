@@ -116,5 +116,17 @@
   <ItemGroup>
     <None Include="Resources\Icons\Main_Logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\dashboard_Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Add_teacher_Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\student_registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\logout.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

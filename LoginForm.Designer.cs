@@ -97,6 +97,8 @@
             // lblRegisterLink_Login
             // 
             this.lblRegisterLink_Login.AutoSize = true;
+            this.lblRegisterLink_Login.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblRegisterLink_Login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblRegisterLink_Login.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegisterLink_Login.ForeColor = System.Drawing.Color.DarkGreen;
             this.lblRegisterLink_Login.Location = new System.Drawing.Point(190, 332);

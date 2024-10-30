@@ -25,5 +25,16 @@ namespace UniManagementSystem
                 Application.Exit();
             }
         }
+
+        private void btnLogout_Main_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are sure you want to Logout?", "Confirmation Message", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                LoginForm login = new LoginForm();
+                login.Show();
+                this.Hide();
+            }
+        }
     }
 }

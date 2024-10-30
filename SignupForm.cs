@@ -86,21 +86,19 @@ namespace UniManagementSystem
                             }
                             else
                             {
-                                string insertData = "INSERT INTO users(username ,password,date_created) VALUES (@username,@password,@date)";
+                                string insertData = "INSERT INTO users(username ,password) VALUES (@username,@password)";
 
                                 using (SqlCommand insertUser = new SqlCommand(insertData, connection))
                                 {
                                     insertUser.Parameters.AddWithValue("@username", tbUsername_Signup.Text.Trim());
                                     insertUser.Parameters.AddWithValue("@password", tbPassword_Signup.Text.Trim());
-                                    insertUser.Parameters.AddWithValue("@date", DateTime.Today);
 
                                     insertUser.ExecuteNonQuery();
 
                                     MessageBox.Show("User Registered Successfully", "Informaton Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                    LoginForm loginform = new LoginForm();
-
-                                    loginform.Show();
+                                    MainForm mainPage = new MainForm();
+                                    mainPage.Show();
                                     this.Hide();
 
                                 }
