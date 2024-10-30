@@ -65,9 +65,10 @@ namespace UniManagementSystem
                     {
                         Username = tbUsername_Login.Text;
                         MessageBox.Show("Login Successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        //MainPage mainPage = new MainPage();
-                        //mainPage.Show();
-                        // this.Hide();
+                        
+                        MainForm mainPage = new MainForm();
+                        mainPage.Show(); 
+                        this.Hide();
                     }
                     else
                     {
