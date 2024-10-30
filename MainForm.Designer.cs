@@ -32,13 +32,14 @@
             this.lblUMS_Main = new System.Windows.Forms.Label();
             this.lblX_Main = new System.Windows.Forms.Label();
             this.pnlSideMain_Main = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblWelcome_Main = new System.Windows.Forms.Label();
             this.btnLogout_Main = new System.Windows.Forms.Button();
             this.btnAddStudent_Main = new System.Windows.Forms.Button();
             this.btnAddTeacher_Main = new System.Windows.Forms.Button();
             this.btnDashboard_Main = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblWelcome_Main = new System.Windows.Forms.Label();
             this.pbLogo_Main = new System.Windows.Forms.PictureBox();
+            this.pnlUserControls_Main = new System.Windows.Forms.Panel();
             this.pnlHeader_Main.SuspendLayout();
             this.pnlSideMain_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo_Main)).BeginInit();
@@ -90,28 +91,8 @@
             this.pnlSideMain_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlSideMain_Main.Location = new System.Drawing.Point(0, 47);
             this.pnlSideMain_Main.Name = "pnlSideMain_Main";
-            this.pnlSideMain_Main.Size = new System.Drawing.Size(334, 653);
+            this.pnlSideMain_Main.Size = new System.Drawing.Size(339, 653);
             this.pnlSideMain_Main.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 186);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 29);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Admin";
-            // 
-            // lblWelcome_Main
-            // 
-            this.lblWelcome_Main.AutoSize = true;
-            this.lblWelcome_Main.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome_Main.Location = new System.Drawing.Point(62, 186);
-            this.lblWelcome_Main.Name = "lblWelcome_Main";
-            this.lblWelcome_Main.Size = new System.Drawing.Size(107, 29);
-            this.lblWelcome_Main.TabIndex = 2;
-            this.lblWelcome_Main.Text = "Welcome,";
             // 
             // btnLogout_Main
             // 
@@ -177,6 +158,26 @@
             this.btnDashboard_Main.Text = "Dashboard";
             this.btnDashboard_Main.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(175, 186);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 29);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Admin";
+            // 
+            // lblWelcome_Main
+            // 
+            this.lblWelcome_Main.AutoSize = true;
+            this.lblWelcome_Main.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome_Main.Location = new System.Drawing.Point(62, 186);
+            this.lblWelcome_Main.Name = "lblWelcome_Main";
+            this.lblWelcome_Main.Size = new System.Drawing.Size(107, 29);
+            this.lblWelcome_Main.TabIndex = 2;
+            this.lblWelcome_Main.Text = "Welcome,";
+            // 
             // pbLogo_Main
             // 
             this.pbLogo_Main.Image = global::UniManagementSystem.Properties.Resources.Main_Logo;
@@ -186,11 +187,20 @@
             this.pbLogo_Main.TabIndex = 2;
             this.pbLogo_Main.TabStop = false;
             // 
+            // pnlUserControls_Main
+            // 
+            this.pnlUserControls_Main.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlUserControls_Main.Location = new System.Drawing.Point(345, 47);
+            this.pnlUserControls_Main.Name = "pnlUserControls_Main";
+            this.pnlUserControls_Main.Size = new System.Drawing.Size(855, 653);
+            this.pnlUserControls_Main.TabIndex = 2;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.pnlUserControls_Main);
             this.Controls.Add(this.pnlSideMain_Main);
             this.Controls.Add(this.pnlHeader_Main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -219,5 +229,6 @@
         private System.Windows.Forms.Button btnAddTeacher_Main;
         private System.Windows.Forms.Label lblUMS_Main;
         private System.Windows.Forms.Button btnLogout_Main;
+        private System.Windows.Forms.Panel pnlUserControls_Main;
     }
 }
