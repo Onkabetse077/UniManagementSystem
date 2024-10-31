@@ -70,6 +70,7 @@
             // lblX_Main
             // 
             this.lblX_Main.AutoSize = true;
+            this.lblX_Main.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblX_Main.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblX_Main.Location = new System.Drawing.Point(1162, 9);
             this.lblX_Main.Name = "lblX_Main";
