@@ -52,6 +52,12 @@
     <Compile Include="AddStudentsForm.Designer.cs">
       <DependentUpon>AddStudentsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddTeachersForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddTeachersForm.Designer.cs">
+      <DependentUpon>AddTeachersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DashboardForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </Compile>
     <EmbeddedResource Include="AddStudentsForm.resx">
       <DependentUpon>AddStudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeachersForm.resx">
+      <DependentUpon>AddTeachersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
