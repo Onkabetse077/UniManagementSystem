@@ -36,5 +36,26 @@ namespace UniManagementSystem
                 this.Hide();
             }
         }
+
+        private void btnDashboard_Main_Click(object sender, EventArgs e)
+        {
+            dashboardForm_Main.Visible = true;
+            addStudentsForm_Main.Visible = false;
+            addTeachersForm_Main.Visible = false;
+        }
+
+        private void btnAddTeacher_Main_Click(object sender, EventArgs e)
+        {
+            dashboardForm_Main.Visible = false;
+            addStudentsForm_Main.Visible = false;
+            addTeachersForm_Main.Visible = true;
+        }
+
+        private void btnAddStudent_Main_Click(object sender, EventArgs e)
+        {
+            dashboardForm_Main.Visible = false;
+            addStudentsForm_Main.Visible = true;
+            addTeachersForm_Main.Visible = false;
+        }
     }
 }

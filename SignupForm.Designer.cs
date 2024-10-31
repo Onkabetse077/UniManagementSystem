@@ -71,6 +71,7 @@
             // lblX_Signup
             // 
             this.lblX_Signup.AutoSize = true;
+            this.lblX_Signup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblX_Signup.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblX_Signup.Location = new System.Drawing.Point(771, 9);
             this.lblX_Signup.Name = "lblX_Signup";
@@ -153,6 +154,7 @@
             // btnRegister_Signup
             // 
             this.btnRegister_Signup.BackColor = System.Drawing.Color.Lime;
+            this.btnRegister_Signup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister_Signup.FlatAppearance.BorderSize = 0;
             this.btnRegister_Signup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btnRegister_Signup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
@@ -170,6 +172,7 @@
             // cbShowPassword_Signup
             // 
             this.cbShowPassword_Signup.AutoSize = true;
+            this.cbShowPassword_Signup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbShowPassword_Signup.Location = new System.Drawing.Point(145, 252);
             this.cbShowPassword_Signup.Name = "cbShowPassword_Signup";
             this.cbShowPassword_Signup.Size = new System.Drawing.Size(125, 20);
