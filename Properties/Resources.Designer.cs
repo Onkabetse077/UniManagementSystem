@@ -83,6 +83,26 @@ namespace UniManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Enrolled {
+            get {
+                object obj = ResourceManager.GetObject("Enrolled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Graduate {
+            get {
+                object obj = ResourceManager.GetObject("Graduate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Loading_Logo {
             get {
                 object obj = ResourceManager.GetObject("Loading_Logo", resourceCulture);
@@ -116,6 +136,16 @@ namespace UniManagementSystem.Properties {
         internal static System.Drawing.Bitmap student_registration {
             get {
                 object obj = ResourceManager.GetObject("student_registration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Total_Teachers {
+            get {
+                object obj = ResourceManager.GetObject("Total_Teachers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
