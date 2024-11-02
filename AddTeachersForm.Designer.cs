@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDelete_AddTeachers = new System.Windows.Forms.Button();
             this.btnClear_AddTeachers = new System.Windows.Forms.Button();
             this.btnUpdate_AddTeachers = new System.Windows.Forms.Button();
@@ -285,8 +286,17 @@
             // dgvTeacherData_AddTeachers
             // 
             this.dgvTeacherData_AddTeachers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTeacherData_AddTeachers.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTeacherData_AddTeachers.Location = new System.Drawing.Point(20, 38);
             this.dgvTeacherData_AddTeachers.Name = "dgvTeacherData_AddTeachers";
+            this.dgvTeacherData_AddTeachers.RowHeadersVisible = false;
             this.dgvTeacherData_AddTeachers.RowHeadersWidth = 51;
             this.dgvTeacherData_AddTeachers.RowTemplate.Height = 24;
             this.dgvTeacherData_AddTeachers.Size = new System.Drawing.Size(986, 243);

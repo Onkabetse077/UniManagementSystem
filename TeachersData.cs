@@ -39,7 +39,7 @@ namespace UniManagementSystem
 
                         while (reader.Read())
                         {
-                            TeachersData teachersData = new TeachersData();
+                           TeachersData teachersData = new TeachersData();
 
                             teachersData.ID = (int)reader["id"];
                             teachersData.TeacherID = reader["teacher_id"].ToString();

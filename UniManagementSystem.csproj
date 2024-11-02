@@ -199,6 +199,7 @@
     <Compile Include="SignupForm.Designer.cs">
       <DependentUpon>SignupForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentsData.cs" />
     <Compile Include="TeachersData.cs" />
     <EmbeddedResource Include="AddStudentsForm.resx">
       <DependentUpon>AddStudentsForm.cs</DependentUpon>
