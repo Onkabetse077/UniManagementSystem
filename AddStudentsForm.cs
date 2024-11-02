@@ -24,5 +24,25 @@ namespace UniManagementSystem
         {
 
         }
+
+        private void btnUpdate_AddStudents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_AddStudents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_AddStudents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnImport_AddStudents_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -131,6 +131,7 @@
             this.btnDelete_AddStudents.TabIndex = 23;
             this.btnDelete_AddStudents.Text = "Delete";
             this.btnDelete_AddStudents.UseVisualStyleBackColor = false;
+            this.btnDelete_AddStudents.Click += new System.EventHandler(this.btnDelete_AddStudents_Click);
             // 
             // btnClear_AddStudents
             // 
@@ -147,6 +148,7 @@
             this.btnClear_AddStudents.TabIndex = 22;
             this.btnClear_AddStudents.Text = "Clear";
             this.btnClear_AddStudents.UseVisualStyleBackColor = false;
+            this.btnClear_AddStudents.Click += new System.EventHandler(this.btnClear_AddStudents_Click);
             // 
             // btnUpdate_AddStudents
             // 
@@ -163,6 +165,7 @@
             this.btnUpdate_AddStudents.TabIndex = 21;
             this.btnUpdate_AddStudents.Text = "Update";
             this.btnUpdate_AddStudents.UseVisualStyleBackColor = false;
+            this.btnUpdate_AddStudents.Click += new System.EventHandler(this.btnUpdate_AddStudents_Click);
             // 
             // btnAdd_AddStudents
             // 
@@ -196,6 +199,7 @@
             this.btnImport_AddStudents.TabIndex = 19;
             this.btnImport_AddStudents.Text = "Import";
             this.btnImport_AddStudents.UseVisualStyleBackColor = false;
+            this.btnImport_AddStudents.Click += new System.EventHandler(this.btnImport_AddStudents_Click);
             // 
             // pnlImg_AddStudents
             // 

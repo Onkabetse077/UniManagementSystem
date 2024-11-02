@@ -34,7 +34,7 @@
             this.btnAdd_AddTeachers = new System.Windows.Forms.Button();
             this.btnImport_AddTeachers = new System.Windows.Forms.Button();
             this.pnlImg_AddTeachers = new System.Windows.Forms.Panel();
-            this.pbStudentImg_AddTeachers = new System.Windows.Forms.PictureBox();
+            this.pbTeacherImg_AddTeachers = new System.Windows.Forms.PictureBox();
             this.cbStatus_AddTeachers = new System.Windows.Forms.ComboBox();
             this.tbAddress_AddTeachers = new System.Windows.Forms.TextBox();
             this.lblAddress_AddTeachers = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.lblTeacherData_AddTeachers = new System.Windows.Forms.Label();
             this.pnlTeacherData_AddTeachers = new System.Windows.Forms.Panel();
             this.pnlImg_AddTeachers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStudentImg_AddTeachers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTeacherImg_AddTeachers)).BeginInit();
             this.pnlInputTeacherData_AddTeachers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeacherData_AddTeachers)).BeginInit();
             this.pnlTeacherData_AddTeachers.SuspendLayout();
@@ -71,6 +71,7 @@
             this.btnDelete_AddTeachers.TabIndex = 23;
             this.btnDelete_AddTeachers.Text = "Delete";
             this.btnDelete_AddTeachers.UseVisualStyleBackColor = false;
+            this.btnDelete_AddTeachers.Click += new System.EventHandler(this.btnDelete_AddTeachers_Click);
             // 
             // btnClear_AddTeachers
             // 
@@ -87,6 +88,7 @@
             this.btnClear_AddTeachers.TabIndex = 22;
             this.btnClear_AddTeachers.Text = "Clear";
             this.btnClear_AddTeachers.UseVisualStyleBackColor = false;
+            this.btnClear_AddTeachers.Click += new System.EventHandler(this.btnClear_AddTeachers_Click);
             // 
             // btnUpdate_AddTeachers
             // 
@@ -103,6 +105,7 @@
             this.btnUpdate_AddTeachers.TabIndex = 21;
             this.btnUpdate_AddTeachers.Text = "Update";
             this.btnUpdate_AddTeachers.UseVisualStyleBackColor = false;
+            this.btnUpdate_AddTeachers.Click += new System.EventHandler(this.btnUpdate_AddTeachers_Click);
             // 
             // btnAdd_AddTeachers
             // 
@@ -136,24 +139,25 @@
             this.btnImport_AddTeachers.TabIndex = 19;
             this.btnImport_AddTeachers.Text = "Import";
             this.btnImport_AddTeachers.UseVisualStyleBackColor = false;
+            this.btnImport_AddTeachers.Click += new System.EventHandler(this.btnImport_AddTeachers_Click);
             // 
             // pnlImg_AddTeachers
             // 
             this.pnlImg_AddTeachers.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pnlImg_AddTeachers.Controls.Add(this.pbStudentImg_AddTeachers);
+            this.pnlImg_AddTeachers.Controls.Add(this.pbTeacherImg_AddTeachers);
             this.pnlImg_AddTeachers.Location = new System.Drawing.Point(888, 30);
             this.pnlImg_AddTeachers.Name = "pnlImg_AddTeachers";
             this.pnlImg_AddTeachers.Size = new System.Drawing.Size(118, 121);
             this.pnlImg_AddTeachers.TabIndex = 18;
             // 
-            // pbStudentImg_AddTeachers
+            // pbTeacherImg_AddTeachers
             // 
-            this.pbStudentImg_AddTeachers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbStudentImg_AddTeachers.Location = new System.Drawing.Point(0, 0);
-            this.pbStudentImg_AddTeachers.Name = "pbStudentImg_AddTeachers";
-            this.pbStudentImg_AddTeachers.Size = new System.Drawing.Size(118, 121);
-            this.pbStudentImg_AddTeachers.TabIndex = 0;
-            this.pbStudentImg_AddTeachers.TabStop = false;
+            this.pbTeacherImg_AddTeachers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbTeacherImg_AddTeachers.Location = new System.Drawing.Point(0, 0);
+            this.pbTeacherImg_AddTeachers.Name = "pbTeacherImg_AddTeachers";
+            this.pbTeacherImg_AddTeachers.Size = new System.Drawing.Size(118, 121);
+            this.pbTeacherImg_AddTeachers.TabIndex = 0;
+            this.pbTeacherImg_AddTeachers.TabStop = false;
             // 
             // cbStatus_AddTeachers
             // 
@@ -287,6 +291,7 @@
             this.dgvTeacherData_AddTeachers.RowTemplate.Height = 24;
             this.dgvTeacherData_AddTeachers.Size = new System.Drawing.Size(986, 243);
             this.dgvTeacherData_AddTeachers.TabIndex = 1;
+            this.dgvTeacherData_AddTeachers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTeacherData_AddTeachers_CellContentClick);
             // 
             // lblTeacherData_AddTeachers
             // 
@@ -318,7 +323,7 @@
             this.Name = "AddTeachersForm";
             this.Size = new System.Drawing.Size(1059, 653);
             this.pnlImg_AddTeachers.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbStudentImg_AddTeachers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTeacherImg_AddTeachers)).EndInit();
             this.pnlInputTeacherData_AddTeachers.ResumeLayout(false);
             this.pnlInputTeacherData_AddTeachers.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeacherData_AddTeachers)).EndInit();
@@ -350,6 +355,6 @@
         private System.Windows.Forms.DataGridView dgvTeacherData_AddTeachers;
         private System.Windows.Forms.Label lblTeacherData_AddTeachers;
         private System.Windows.Forms.Panel pnlTeacherData_AddTeachers;
-        private System.Windows.Forms.PictureBox pbStudentImg_AddTeachers;
+        private System.Windows.Forms.PictureBox pbTeacherImg_AddTeachers;
     }
 }
