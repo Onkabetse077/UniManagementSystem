@@ -7,14 +7,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace UniManagementSystem
 {
     public partial class AddStudentsForm : UserControl
     {
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\gosia\Documents\Project\Visual Studio\C#\UniManagementSystem\Resources\Database\Uni.mdf"";Integrated Security=True;Connect Timeout=30");
         public AddStudentsForm()
         {
             InitializeComponent();
+        }
+
+        private void btnAdd_AddStudents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_AddStudents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_AddStudents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_AddStudents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnImport_AddStudents_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

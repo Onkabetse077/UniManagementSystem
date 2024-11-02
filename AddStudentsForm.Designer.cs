@@ -32,8 +32,17 @@
             this.dgvStudentData_AddStudents = new System.Windows.Forms.DataGridView();
             this.lblStudentData_AddStudents = new System.Windows.Forms.Label();
             this.pnlInputStudentData_AddStudents = new System.Windows.Forms.Panel();
-            this.tbAddress_AddStudent = new System.Windows.Forms.TextBox();
-            this.lblAddress_AddStudent = new System.Windows.Forms.Label();
+            this.btnDelete_AddStudents = new System.Windows.Forms.Button();
+            this.btnClear_AddStudents = new System.Windows.Forms.Button();
+            this.btnUpdate_AddStudents = new System.Windows.Forms.Button();
+            this.btnAdd_AddStudents = new System.Windows.Forms.Button();
+            this.btnImport_AddStudents = new System.Windows.Forms.Button();
+            this.pnlImg_AddStudents = new System.Windows.Forms.Panel();
+            this.pbStudentsImg_AddStudents = new System.Windows.Forms.PictureBox();
+            this.cbSection_AddStudents = new System.Windows.Forms.ComboBox();
+            this.cbGrade_AddStudents = new System.Windows.Forms.ComboBox();
+            this.tbAddress_AddStudents = new System.Windows.Forms.TextBox();
+            this.lblAddress_AddStudents = new System.Windows.Forms.Label();
             this.lblSection_AddStudents = new System.Windows.Forms.Label();
             this.lblGrade_AddStudents = new System.Windows.Forms.Label();
             this.lblGender_AddStudents = new System.Windows.Forms.Label();
@@ -42,17 +51,11 @@
             this.lblFullName_AddStudents = new System.Windows.Forms.Label();
             this.tbStudentID_AddStudents = new System.Windows.Forms.TextBox();
             this.lblStudentID_AddStudents = new System.Windows.Forms.Label();
-            this.cbGrade_AddStudents = new System.Windows.Forms.ComboBox();
-            this.cbSection_AddStudents = new System.Windows.Forms.ComboBox();
-            this.pnlImg_AddStudents = new System.Windows.Forms.Panel();
-            this.btnImport_AddStudents = new System.Windows.Forms.Button();
-            this.btnAdd_AddStudents = new System.Windows.Forms.Button();
-            this.btnUpdate_AddStudents = new System.Windows.Forms.Button();
-            this.btnDelete_AddStudents = new System.Windows.Forms.Button();
-            this.btnClear_AddStudents = new System.Windows.Forms.Button();
             this.pnlStudentData_AddStudents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentData_AddStudents)).BeginInit();
             this.pnlInputStudentData_AddStudents.SuspendLayout();
+            this.pnlImg_AddStudents.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStudentsImg_AddStudents)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlStudentData_AddStudents
@@ -98,8 +101,8 @@
             this.pnlInputStudentData_AddStudents.Controls.Add(this.pnlImg_AddStudents);
             this.pnlInputStudentData_AddStudents.Controls.Add(this.cbSection_AddStudents);
             this.pnlInputStudentData_AddStudents.Controls.Add(this.cbGrade_AddStudents);
-            this.pnlInputStudentData_AddStudents.Controls.Add(this.tbAddress_AddStudent);
-            this.pnlInputStudentData_AddStudents.Controls.Add(this.lblAddress_AddStudent);
+            this.pnlInputStudentData_AddStudents.Controls.Add(this.tbAddress_AddStudents);
+            this.pnlInputStudentData_AddStudents.Controls.Add(this.lblAddress_AddStudents);
             this.pnlInputStudentData_AddStudents.Controls.Add(this.lblSection_AddStudents);
             this.pnlInputStudentData_AddStudents.Controls.Add(this.lblGrade_AddStudents);
             this.pnlInputStudentData_AddStudents.Controls.Add(this.lblGender_AddStudents);
@@ -113,24 +116,151 @@
             this.pnlInputStudentData_AddStudents.Size = new System.Drawing.Size(1026, 291);
             this.pnlInputStudentData_AddStudents.TabIndex = 1;
             // 
-            // tbAddress_AddStudent
+            // btnDelete_AddStudents
             // 
-            this.tbAddress_AddStudent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbAddress_AddStudent.Location = new System.Drawing.Point(398, 30);
-            this.tbAddress_AddStudent.Multiline = true;
-            this.tbAddress_AddStudent.Name = "tbAddress_AddStudent";
-            this.tbAddress_AddStudent.Size = new System.Drawing.Size(160, 70);
-            this.tbAddress_AddStudent.TabIndex = 14;
+            this.btnDelete_AddStudents.BackColor = System.Drawing.Color.Lime;
+            this.btnDelete_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnDelete_AddStudents.FlatAppearance.BorderSize = 0;
+            this.btnDelete_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.btnDelete_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnDelete_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete_AddStudents.Location = new System.Drawing.Point(642, 213);
+            this.btnDelete_AddStudents.Name = "btnDelete_AddStudents";
+            this.btnDelete_AddStudents.Size = new System.Drawing.Size(118, 51);
+            this.btnDelete_AddStudents.TabIndex = 23;
+            this.btnDelete_AddStudents.Text = "Delete";
+            this.btnDelete_AddStudents.UseVisualStyleBackColor = false;
+            this.btnDelete_AddStudents.Click += new System.EventHandler(this.btnDelete_AddStudents_Click);
             // 
-            // lblAddress_AddStudent
+            // btnClear_AddStudents
             // 
-            this.lblAddress_AddStudent.AutoSize = true;
-            this.lblAddress_AddStudent.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress_AddStudent.Location = new System.Drawing.Point(308, 30);
-            this.lblAddress_AddStudent.Name = "lblAddress_AddStudent";
-            this.lblAddress_AddStudent.Size = new System.Drawing.Size(65, 18);
-            this.lblAddress_AddStudent.TabIndex = 13;
-            this.lblAddress_AddStudent.Text = "Address:";
+            this.btnClear_AddStudents.BackColor = System.Drawing.Color.Lime;
+            this.btnClear_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnClear_AddStudents.FlatAppearance.BorderSize = 0;
+            this.btnClear_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.btnClear_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnClear_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear_AddStudents.Location = new System.Drawing.Point(486, 213);
+            this.btnClear_AddStudents.Name = "btnClear_AddStudents";
+            this.btnClear_AddStudents.Size = new System.Drawing.Size(118, 51);
+            this.btnClear_AddStudents.TabIndex = 22;
+            this.btnClear_AddStudents.Text = "Clear";
+            this.btnClear_AddStudents.UseVisualStyleBackColor = false;
+            this.btnClear_AddStudents.Click += new System.EventHandler(this.btnClear_AddStudents_Click);
+            // 
+            // btnUpdate_AddStudents
+            // 
+            this.btnUpdate_AddStudents.BackColor = System.Drawing.Color.Lime;
+            this.btnUpdate_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnUpdate_AddStudents.FlatAppearance.BorderSize = 0;
+            this.btnUpdate_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.btnUpdate_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnUpdate_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate_AddStudents.Location = new System.Drawing.Point(326, 213);
+            this.btnUpdate_AddStudents.Name = "btnUpdate_AddStudents";
+            this.btnUpdate_AddStudents.Size = new System.Drawing.Size(118, 51);
+            this.btnUpdate_AddStudents.TabIndex = 21;
+            this.btnUpdate_AddStudents.Text = "Update";
+            this.btnUpdate_AddStudents.UseVisualStyleBackColor = false;
+            this.btnUpdate_AddStudents.Click += new System.EventHandler(this.btnUpdate_AddStudents_Click);
+            // 
+            // btnAdd_AddStudents
+            // 
+            this.btnAdd_AddStudents.BackColor = System.Drawing.Color.Lime;
+            this.btnAdd_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnAdd_AddStudents.FlatAppearance.BorderSize = 0;
+            this.btnAdd_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.btnAdd_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnAdd_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd_AddStudents.Location = new System.Drawing.Point(170, 213);
+            this.btnAdd_AddStudents.Name = "btnAdd_AddStudents";
+            this.btnAdd_AddStudents.Size = new System.Drawing.Size(118, 51);
+            this.btnAdd_AddStudents.TabIndex = 20;
+            this.btnAdd_AddStudents.Text = "Add";
+            this.btnAdd_AddStudents.UseVisualStyleBackColor = false;
+            this.btnAdd_AddStudents.Click += new System.EventHandler(this.btnAdd_AddStudents_Click);
+            // 
+            // btnImport_AddStudents
+            // 
+            this.btnImport_AddStudents.BackColor = System.Drawing.Color.Lime;
+            this.btnImport_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnImport_AddStudents.FlatAppearance.BorderSize = 0;
+            this.btnImport_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.btnImport_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnImport_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImport_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImport_AddStudents.Location = new System.Drawing.Point(888, 157);
+            this.btnImport_AddStudents.Name = "btnImport_AddStudents";
+            this.btnImport_AddStudents.Size = new System.Drawing.Size(118, 23);
+            this.btnImport_AddStudents.TabIndex = 19;
+            this.btnImport_AddStudents.Text = "Import";
+            this.btnImport_AddStudents.UseVisualStyleBackColor = false;
+            this.btnImport_AddStudents.Click += new System.EventHandler(this.btnImport_AddStudents_Click);
+            // 
+            // pnlImg_AddStudents
+            // 
+            this.pnlImg_AddStudents.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pnlImg_AddStudents.Controls.Add(this.pbStudentsImg_AddStudents);
+            this.pnlImg_AddStudents.Location = new System.Drawing.Point(888, 30);
+            this.pnlImg_AddStudents.Name = "pnlImg_AddStudents";
+            this.pnlImg_AddStudents.Size = new System.Drawing.Size(118, 121);
+            this.pnlImg_AddStudents.TabIndex = 18;
+            // 
+            // pbStudentsImg_AddStudents
+            // 
+            this.pbStudentsImg_AddStudents.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbStudentsImg_AddStudents.Location = new System.Drawing.Point(0, 0);
+            this.pbStudentsImg_AddStudents.Name = "pbStudentsImg_AddStudents";
+            this.pbStudentsImg_AddStudents.Size = new System.Drawing.Size(118, 121);
+            this.pbStudentsImg_AddStudents.TabIndex = 0;
+            this.pbStudentsImg_AddStudents.TabStop = false;
+            // 
+            // cbSection_AddStudents
+            // 
+            this.cbSection_AddStudents.FormattingEnabled = true;
+            this.cbSection_AddStudents.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.cbSection_AddStudents.Location = new System.Drawing.Point(695, 30);
+            this.cbSection_AddStudents.Name = "cbSection_AddStudents";
+            this.cbSection_AddStudents.Size = new System.Drawing.Size(160, 24);
+            this.cbSection_AddStudents.TabIndex = 17;
+            // 
+            // cbGrade_AddStudents
+            // 
+            this.cbGrade_AddStudents.FormattingEnabled = true;
+            this.cbGrade_AddStudents.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.cbGrade_AddStudents.Location = new System.Drawing.Point(398, 127);
+            this.cbGrade_AddStudents.Name = "cbGrade_AddStudents";
+            this.cbGrade_AddStudents.Size = new System.Drawing.Size(160, 24);
+            this.cbGrade_AddStudents.TabIndex = 15;
+            // 
+            // tbAddress_AddStudents
+            // 
+            this.tbAddress_AddStudents.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbAddress_AddStudents.Location = new System.Drawing.Point(398, 30);
+            this.tbAddress_AddStudents.Multiline = true;
+            this.tbAddress_AddStudents.Name = "tbAddress_AddStudents";
+            this.tbAddress_AddStudents.Size = new System.Drawing.Size(160, 70);
+            this.tbAddress_AddStudents.TabIndex = 14;
+            // 
+            // lblAddress_AddStudents
+            // 
+            this.lblAddress_AddStudents.AutoSize = true;
+            this.lblAddress_AddStudents.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress_AddStudents.Location = new System.Drawing.Point(308, 30);
+            this.lblAddress_AddStudents.Name = "lblAddress_AddStudents";
+            this.lblAddress_AddStudents.Size = new System.Drawing.Size(65, 18);
+            this.lblAddress_AddStudents.TabIndex = 13;
+            this.lblAddress_AddStudents.Text = "Address:";
             // 
             // lblSection_AddStudents
             // 
@@ -210,118 +340,6 @@
             this.lblStudentID_AddStudents.TabIndex = 1;
             this.lblStudentID_AddStudents.Text = "Student ID:";
             // 
-            // cbGrade_AddStudents
-            // 
-            this.cbGrade_AddStudents.FormattingEnabled = true;
-            this.cbGrade_AddStudents.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
-            this.cbGrade_AddStudents.Location = new System.Drawing.Point(398, 127);
-            this.cbGrade_AddStudents.Name = "cbGrade_AddStudents";
-            this.cbGrade_AddStudents.Size = new System.Drawing.Size(160, 24);
-            this.cbGrade_AddStudents.TabIndex = 15;
-            // 
-            // cbSection_AddStudents
-            // 
-            this.cbSection_AddStudents.FormattingEnabled = true;
-            this.cbSection_AddStudents.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
-            this.cbSection_AddStudents.Location = new System.Drawing.Point(695, 30);
-            this.cbSection_AddStudents.Name = "cbSection_AddStudents";
-            this.cbSection_AddStudents.Size = new System.Drawing.Size(160, 24);
-            this.cbSection_AddStudents.TabIndex = 17;
-            // 
-            // pnlImg_AddStudents
-            // 
-            this.pnlImg_AddStudents.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pnlImg_AddStudents.Location = new System.Drawing.Point(888, 30);
-            this.pnlImg_AddStudents.Name = "pnlImg_AddStudents";
-            this.pnlImg_AddStudents.Size = new System.Drawing.Size(118, 121);
-            this.pnlImg_AddStudents.TabIndex = 18;
-            // 
-            // btnImport_AddStudents
-            // 
-            this.btnImport_AddStudents.BackColor = System.Drawing.Color.Lime;
-            this.btnImport_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btnImport_AddStudents.FlatAppearance.BorderSize = 0;
-            this.btnImport_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-            this.btnImport_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.btnImport_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImport_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImport_AddStudents.Location = new System.Drawing.Point(888, 157);
-            this.btnImport_AddStudents.Name = "btnImport_AddStudents";
-            this.btnImport_AddStudents.Size = new System.Drawing.Size(118, 23);
-            this.btnImport_AddStudents.TabIndex = 19;
-            this.btnImport_AddStudents.Text = "Import";
-            this.btnImport_AddStudents.UseVisualStyleBackColor = false;
-            // 
-            // btnAdd_AddStudents
-            // 
-            this.btnAdd_AddStudents.BackColor = System.Drawing.Color.Lime;
-            this.btnAdd_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btnAdd_AddStudents.FlatAppearance.BorderSize = 0;
-            this.btnAdd_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-            this.btnAdd_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.btnAdd_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd_AddStudents.Location = new System.Drawing.Point(170, 213);
-            this.btnAdd_AddStudents.Name = "btnAdd_AddStudents";
-            this.btnAdd_AddStudents.Size = new System.Drawing.Size(118, 51);
-            this.btnAdd_AddStudents.TabIndex = 20;
-            this.btnAdd_AddStudents.Text = "Add";
-            this.btnAdd_AddStudents.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdate_AddStudents
-            // 
-            this.btnUpdate_AddStudents.BackColor = System.Drawing.Color.Lime;
-            this.btnUpdate_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btnUpdate_AddStudents.FlatAppearance.BorderSize = 0;
-            this.btnUpdate_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-            this.btnUpdate_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.btnUpdate_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate_AddStudents.Location = new System.Drawing.Point(326, 213);
-            this.btnUpdate_AddStudents.Name = "btnUpdate_AddStudents";
-            this.btnUpdate_AddStudents.Size = new System.Drawing.Size(118, 51);
-            this.btnUpdate_AddStudents.TabIndex = 21;
-            this.btnUpdate_AddStudents.Text = "Update";
-            this.btnUpdate_AddStudents.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete_AddStudents
-            // 
-            this.btnDelete_AddStudents.BackColor = System.Drawing.Color.Lime;
-            this.btnDelete_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btnDelete_AddStudents.FlatAppearance.BorderSize = 0;
-            this.btnDelete_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-            this.btnDelete_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.btnDelete_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete_AddStudents.Location = new System.Drawing.Point(642, 213);
-            this.btnDelete_AddStudents.Name = "btnDelete_AddStudents";
-            this.btnDelete_AddStudents.Size = new System.Drawing.Size(118, 51);
-            this.btnDelete_AddStudents.TabIndex = 23;
-            this.btnDelete_AddStudents.Text = "Delete";
-            this.btnDelete_AddStudents.UseVisualStyleBackColor = false;
-            // 
-            // btnClear_AddStudents
-            // 
-            this.btnClear_AddStudents.BackColor = System.Drawing.Color.Lime;
-            this.btnClear_AddStudents.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btnClear_AddStudents.FlatAppearance.BorderSize = 0;
-            this.btnClear_AddStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-            this.btnClear_AddStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.btnClear_AddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear_AddStudents.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear_AddStudents.Location = new System.Drawing.Point(486, 213);
-            this.btnClear_AddStudents.Name = "btnClear_AddStudents";
-            this.btnClear_AddStudents.Size = new System.Drawing.Size(118, 51);
-            this.btnClear_AddStudents.TabIndex = 22;
-            this.btnClear_AddStudents.Text = "Clear";
-            this.btnClear_AddStudents.UseVisualStyleBackColor = false;
-            // 
             // AddStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -335,6 +353,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentData_AddStudents)).EndInit();
             this.pnlInputStudentData_AddStudents.ResumeLayout(false);
             this.pnlInputStudentData_AddStudents.PerformLayout();
+            this.pnlImg_AddStudents.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbStudentsImg_AddStudents)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -353,8 +373,8 @@
         private System.Windows.Forms.ComboBox cbGender_AddStudents;
         private System.Windows.Forms.Label lblSection_AddStudents;
         private System.Windows.Forms.Label lblGrade_AddStudents;
-        private System.Windows.Forms.TextBox tbAddress_AddStudent;
-        private System.Windows.Forms.Label lblAddress_AddStudent;
+        private System.Windows.Forms.TextBox tbAddress_AddStudents;
+        private System.Windows.Forms.Label lblAddress_AddStudents;
         private System.Windows.Forms.ComboBox cbSection_AddStudents;
         private System.Windows.Forms.ComboBox cbGrade_AddStudents;
         private System.Windows.Forms.Panel pnlImg_AddStudents;
@@ -363,5 +383,6 @@
         private System.Windows.Forms.Button btnDelete_AddStudents;
         private System.Windows.Forms.Button btnClear_AddStudents;
         private System.Windows.Forms.Button btnUpdate_AddStudents;
+        private System.Windows.Forms.PictureBox pbStudentsImg_AddStudents;
     }
 }
